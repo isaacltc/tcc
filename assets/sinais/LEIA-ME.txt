@@ -1,0 +1,21 @@
+Coloque aqui as imagens ou videos dos sinais em Libras.
+
+O jogo esta procurando estes arquivos:
+
+brasil.gif
+argentina.mp4
+franca.mp4
+alemanha.mp4
+japao.mp4
+portugal.mp4
+espanha.mp4
+inglaterra.mp4
+estados-unidos.mp4
+italia.mp4
+mexico.mp4
+uruguai.mp4
+
+Pode usar .png, .jpg, .jpeg, .webp, .gif, .mp4, .webm ou .ogg.
+Se mudar a extensao ou o nome, mude tambem o caminho no arquivo script.js.
+
+Videos ficam sem som, em loop e tocando automaticamente.
