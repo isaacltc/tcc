@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa das Bandeiras em Libras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-shell" aria-labelledby="game-title">
+        <header class="top-bar">
+            <div>
+                <p class="eyebrow">Tema Copa do Mundo + Libras</p>
+                <h1 id="game-title">Copa das Bandeiras em Libras</h1>
+            </div>
+        </header>
+
+        <section class="game-layout" aria-label="Jogo de bandeiras e Libras">
+            <aside class="score-panel" aria-label="Placar">
+                <div class="cup-mark" aria-hidden="true">
+                    <span class="cup-ball"></span>
+                    <span class="cup-line"></span>
+                </div>
+
+                <dl class="stats-grid">
+                    <div>
+                        <dt id="scoreLabel">Pontos</dt>
+                        <dd><span id="scoreValue">0</span></dd>
+                    </div>
+                    <div>
+                        <dt id="roundLabelSmall">Rodada</dt>
+                        <dd><span id="roundValue">1</span>/<span id="totalValue">10</span></dd>
+                    </div>
+                    <div>
+                        <dt id="streakLabel">Sequência</dt>
+                        <dd><span id="streakValue">0</span></dd>
+                    </div>
+                </dl>
+
+                <div class="progress-area" aria-label="Progresso">
+                    <div class="progress-track">
+                        <span id="progressBar"></span>
+                    </div>
+                </div>
+
+                <button class="restart-button" id="restartButton" type="button" aria-label="Reiniciar jogo">
+                    <span aria-hidden="true">↻</span>
+                    <span id="restartText">Reiniciar</span>
+                </button>
+            </aside>
+
+            <section class="arena" aria-label="Rodada atual">
+                <div class="round-header">
+                    <p class="round-kicker" id="roundLabel">Rodada 1</p>
+                    <h2 id="questionText">Relacione a bandeira ao sinal em Libras</h2>
+                    <div class="target-flag-card" aria-label="Bandeira da rodada">
+                        <div class="target-flag-frame" id="targetFlag"></div>
+                        <p id="hintText" class="target-country">Observe a bandeira</p>
+                    </div>
+                </div>
+
+                <div class="flag-grid" id="flagGrid"></div>
+
+                <div class="feedback" id="feedback" role="status" aria-live="polite">
+                    <span class="feedback-icon" aria-hidden="true">●</span>
+                    <span id="feedbackText">Escolha a imagem do sinal em Libras que combina com a bandeira.</span>
+                </div>
+
+                <div class="action-row">
+                    <button class="primary-action" id="nextButton" type="button" disabled>
+                        Próxima
+                    </button>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
